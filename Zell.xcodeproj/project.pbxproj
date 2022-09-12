@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC4B4BD628BCEB0400285221 /* AppConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B4BD528BCEB0400285221 /* AppConfigurator.swift */; };
+		EC4B4BD828BCEB3500285221 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B4BD728BCEB3500285221 /* Coordinator.swift */; };
+		EC4B4BDA28BCEB6700285221 /* StoryboardLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B4BD928BCEB6700285221 /* StoryboardLoadable.swift */; };
+		EC4B4BDC28BCEB9000285221 /* ScrensCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B4BDB28BCEB9000285221 /* ScrensCoordinator.swift */; };
+		EC4B4BDE28BCEBE400285221 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B4BDD28BCEBE400285221 /* Colors.swift */; };
+		EC4B4BE428BCECAE00285221 /* PrivatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B4BE328BCECAE00285221 /* PrivatViewController.swift */; };
+		EC4B4BE628BCECBE00285221 /* PrivatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B4BE528BCECBE00285221 /* PrivatView.swift */; };
+		EC4B4BE828C4DE1C00285221 /* SomeConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B4BE728C4DE1C00285221 /* SomeConstraints.swift */; };
+		EC4B4BEA28C4DE7500285221 /* Date+Local.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B4BE928C4DE7500285221 /* Date+Local.swift */; };
+		EC4B4BEC28C4DEA000285221 /* LocalDateFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B4BEB28C4DEA000285221 /* LocalDateFormats.swift */; };
+		EC4B4BF028C5246600285221 /* TableCurrencyArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B4BEF28C5246600285221 /* TableCurrencyArray.swift */; };
+		EC4B4BF328C52B5700285221 /* NetworkMeneger.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B4BF228C52B5700285221 /* NetworkMeneger.swift */; };
+		EC4B4BF528C52B9B00285221 /* TestPrivatResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B4BF428C52B9B00285221 /* TestPrivatResponseData.swift */; };
+		EC4B4BF728C52BD900285221 /* TestPrivatData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B4BF628C52BD900285221 /* TestPrivatData.swift */; };
+		EC4B4BF928C6684B00285221 /* PrivatViewController+Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B4BF828C6684B00285221 /* PrivatViewController+Table.swift */; };
+		EC4B4BFC28C66C3A00285221 /* PrivatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B4BFA28C66C3A00285221 /* PrivatTableViewCell.swift */; };
+		EC4B4BFD28C66C3A00285221 /* PrivatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC4B4BFB28C66C3A00285221 /* PrivatTableViewCell.xib */; };
 		EC4C661C28A2C3A60012E68C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C661B28A2C3A60012E68C /* AppDelegate.swift */; };
 		EC4C661E28A2C3A60012E68C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C661D28A2C3A60012E68C /* SceneDelegate.swift */; };
 		EC4C662028A2C3A60012E68C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C661F28A2C3A60012E68C /* ViewController.swift */; };
@@ -16,6 +33,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC4B4BD528BCEB0400285221 /* AppConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurator.swift; sourceTree = "<group>"; };
+		EC4B4BD728BCEB3500285221 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		EC4B4BD928BCEB6700285221 /* StoryboardLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardLoadable.swift; sourceTree = "<group>"; };
+		EC4B4BDB28BCEB9000285221 /* ScrensCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrensCoordinator.swift; sourceTree = "<group>"; };
+		EC4B4BDD28BCEBE400285221 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		EC4B4BE328BCECAE00285221 /* PrivatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivatViewController.swift; sourceTree = "<group>"; };
+		EC4B4BE528BCECBE00285221 /* PrivatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivatView.swift; sourceTree = "<group>"; };
+		EC4B4BE728C4DE1C00285221 /* SomeConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeConstraints.swift; sourceTree = "<group>"; };
+		EC4B4BE928C4DE7500285221 /* Date+Local.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Local.swift"; sourceTree = "<group>"; };
+		EC4B4BEB28C4DEA000285221 /* LocalDateFormats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDateFormats.swift; sourceTree = "<group>"; };
+		EC4B4BEF28C5246600285221 /* TableCurrencyArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCurrencyArray.swift; sourceTree = "<group>"; };
+		EC4B4BF228C52B5700285221 /* NetworkMeneger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMeneger.swift; sourceTree = "<group>"; };
+		EC4B4BF428C52B9B00285221 /* TestPrivatResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPrivatResponseData.swift; sourceTree = "<group>"; };
+		EC4B4BF628C52BD900285221 /* TestPrivatData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPrivatData.swift; sourceTree = "<group>"; };
+		EC4B4BF828C6684B00285221 /* PrivatViewController+Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PrivatViewController+Table.swift"; sourceTree = "<group>"; };
+		EC4B4BFA28C66C3A00285221 /* PrivatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivatTableViewCell.swift; sourceTree = "<group>"; };
+		EC4B4BFB28C66C3A00285221 /* PrivatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrivatTableViewCell.xib; sourceTree = "<group>"; };
 		EC4C661828A2C3A60012E68C /* Zell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC4C661B28A2C3A60012E68C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC4C661D28A2C3A60012E68C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,9 +71,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC4B4BD428BCEAE900285221 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EC4B4BD528BCEB0400285221 /* AppConfigurator.swift */,
+				EC4B4BD728BCEB3500285221 /* Coordinator.swift */,
+				EC4B4BD928BCEB6700285221 /* StoryboardLoadable.swift */,
+				EC4B4BDB28BCEB9000285221 /* ScrensCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		EC4B4BDF28BCEC6C00285221 /* Privat */ = {
+			isa = PBXGroup;
+			children = (
+				EC4B4BE228BCEC9000285221 /* Controller */,
+				EC4B4BE128BCEC8600285221 /* View */,
+				EC4B4BE028BCEC7D00285221 /* Model */,
+			);
+			path = Privat;
+			sourceTree = "<group>";
+		};
+		EC4B4BE028BCEC7D00285221 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC4B4BEF28C5246600285221 /* TableCurrencyArray.swift */,
+				EC4B4BF628C52BD900285221 /* TestPrivatData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC4B4BE128BCEC8600285221 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC4B4BE528BCECBE00285221 /* PrivatView.swift */,
+				EC4B4BFA28C66C3A00285221 /* PrivatTableViewCell.swift */,
+				EC4B4BFB28C66C3A00285221 /* PrivatTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC4B4BE228BCEC9000285221 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC4B4BE328BCECAE00285221 /* PrivatViewController.swift */,
+				EC4B4BF828C6684B00285221 /* PrivatViewController+Table.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC4B4BF128C52B3F00285221 /* Menegers */ = {
+			isa = PBXGroup;
+			children = (
+				EC4B4BF228C52B5700285221 /* NetworkMeneger.swift */,
+				EC4B4BF428C52B9B00285221 /* TestPrivatResponseData.swift */,
+			);
+			path = Menegers;
+			sourceTree = "<group>";
+		};
 		EC4C660F28A2C3A60012E68C = {
 			isa = PBXGroup;
 			children = (
+				EC4B4BF128C52B3F00285221 /* Menegers */,
+				EC4B4BDF28BCEC6C00285221 /* Privat */,
+				EC4B4BDD28BCEBE400285221 /* Colors.swift */,
+				EC4B4BE728C4DE1C00285221 /* SomeConstraints.swift */,
+				EC4B4BE928C4DE7500285221 /* Date+Local.swift */,
+				EC4B4BEB28C4DEA000285221 /* LocalDateFormats.swift */,
+				EC4B4BD428BCEAE900285221 /* Coordinator */,
 				EC4C661A28A2C3A60012E68C /* Zell */,
 				EC4C661928A2C3A60012E68C /* Products */,
 			);
@@ -125,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC4C662828A2C3AA0012E68C /* LaunchScreen.storyboard in Resources */,
+				EC4B4BFD28C66C3A00285221 /* PrivatTableViewCell.xib in Resources */,
 				EC4C662528A2C3AA0012E68C /* Assets.xcassets in Resources */,
 				EC4C662328A2C3A60012E68C /* Main.storyboard in Resources */,
 			);
@@ -137,9 +237,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC4B4BF928C6684B00285221 /* PrivatViewController+Table.swift in Sources */,
+				EC4B4BE828C4DE1C00285221 /* SomeConstraints.swift in Sources */,
+				EC4B4BDC28BCEB9000285221 /* ScrensCoordinator.swift in Sources */,
+				EC4B4BDE28BCEBE400285221 /* Colors.swift in Sources */,
+				EC4B4BD628BCEB0400285221 /* AppConfigurator.swift in Sources */,
 				EC4C662028A2C3A60012E68C /* ViewController.swift in Sources */,
+				EC4B4BF028C5246600285221 /* TableCurrencyArray.swift in Sources */,
+				EC4B4BFC28C66C3A00285221 /* PrivatTableViewCell.swift in Sources */,
+				EC4B4BF528C52B9B00285221 /* TestPrivatResponseData.swift in Sources */,
+				EC4B4BD828BCEB3500285221 /* Coordinator.swift in Sources */,
+				EC4B4BE428BCECAE00285221 /* PrivatViewController.swift in Sources */,
+				EC4B4BE628BCECBE00285221 /* PrivatView.swift in Sources */,
 				EC4C661C28A2C3A60012E68C /* AppDelegate.swift in Sources */,
+				EC4B4BEC28C4DEA000285221 /* LocalDateFormats.swift in Sources */,
+				EC4B4BF728C52BD900285221 /* TestPrivatData.swift in Sources */,
+				EC4B4BF328C52B5700285221 /* NetworkMeneger.swift in Sources */,
+				EC4B4BDA28BCEB6700285221 /* StoryboardLoadable.swift in Sources */,
 				EC4C661E28A2C3A60012E68C /* SceneDelegate.swift in Sources */,
+				EC4B4BEA28C4DE7500285221 /* Date+Local.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
