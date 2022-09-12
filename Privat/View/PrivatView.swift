@@ -113,7 +113,7 @@ class PrivatView: UIView {
         dateCurrLbl.text = """
                         Currency Exchange on  \(paramDatePicker.date.getFormattedDate(format: .standart))
                         """
-        delegate?.dateChanged(newDate: picker.date)
+   
         //newDateHappens?(picker.date)
     }
 

@@ -11,7 +11,7 @@ enum PrivatEvent {
 }
 
 protocol  PrivatViewControllerDelegate: AnyObject {
-    func dateChanged(newDate: Date)
+    func dateChanged(newDate: Date?)
 }
 
 class PrivatViewController: UIViewController {
@@ -56,14 +56,15 @@ class PrivatViewController: UIViewController {
         mainView?.picker.endEditing(true)
         mainView?.picker.isHidden = true
         mainView?.pickerBackground.isHidden = true
+        dateChanged(newDate: mainView?.picker.date)
     }
 }
 
 extension PrivatViewController: PrivatViewControllerDelegate {
-    func dateChanged(newDate: Date) {
-        model.setModel(date: newDate) {
+    func dateChanged(newDate: Date?) {
+        model.setModel(date: newDate ?? Date()) {
             self.mainView?.myTableView.reloadData()
         }
-        print(newDate.getFormattedDate(format: .standart))
+        print(newDate?.getFormattedDate(format: .standart))
     }
 }
