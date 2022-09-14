@@ -9,7 +9,11 @@ import Foundation
 
 class TableCurrencyArray {
 
+    // MARK: - Properties
+
     var jsonPB: [TestPrivatData?] = [TestPrivatData]()
+
+    // MARK: - Methods
 
     public func setModel(date: Date = Date(), onSuccess: @escaping () -> Void) {
         NetworkManager.shared.simplePrivatArray(date: date, onSuccess: { jsonPB in

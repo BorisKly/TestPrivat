@@ -7,7 +7,8 @@
 
 import Foundation
 
-// MARK: - TestPrivatData
+// MARK: - TestPrivatData structure
+
 struct TestPrivatData: Codable {
     let date: String
     let currency: String?

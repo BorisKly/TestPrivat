@@ -9,12 +9,13 @@ import UIKit
 
 extension PrivatViewController: UITableViewDataSource, UITableViewDelegate {
 
-    var  indentifire: String { "MyCell" }
+    // MARK: - Private Properties
+    
+    private var  indentifire: String { "MyCell" }
 
     //MARK: - UITableViewDataSourse
 
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            print("\(model.jsonPB.count) - number of currency")
             return model.jsonPB.count
         }
 

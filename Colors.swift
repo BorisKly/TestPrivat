@@ -18,7 +18,6 @@ public enum Colors {
     static let tintColor = UIColor.yellow
     static let tintColor2 = UIColor(red: 0.4, green: 0.4, blue: 0.4, alpha: 0.8)
     static let background2 = UIColor.brown
-
     static let background8 = UIColor.black
 
 

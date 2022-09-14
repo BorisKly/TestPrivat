@@ -8,28 +8,14 @@
 import UIKit
 
 class PrivatView: UIView {
-// 44445555
-//    weak var delegate: UITableViewDelegate? {
-//        didSet {
-//            self.myTableView.delegate = delegate
-//        }
-//    }
-//
-//    weak var dataSource: UITableViewDataSource? {
-//        didSet {
-//            self.myTableView.dataSource = dataSource
-//        }
-//    }
 
-    let tableArray = TableCurrencyArray()
+    // MARK: - Public Properties
 
-    let picker = UIDatePicker()
+    public let picker = UIDatePicker()
 
-    let pickerBackground = UIView()
+    public let pickerBackground = UIView()
 
     weak public var delegate: PrivatViewControllerDelegate?
-
-   // public var newDateHappens: ((Date) -> ())?
 
     public var myTableView: UITableView = {
         let table = UITableView()
@@ -37,6 +23,10 @@ class PrivatView: UIView {
         table.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         return table
     }()
+
+    // MARK: - Private Properties
+
+    private let tableArray = TableCurrencyArray()
 
     private let dateCurrLbl: UILabel = {
         let lblField = UILabel()
@@ -53,7 +43,7 @@ class PrivatView: UIView {
         return lblField
     }()
 
-    let dateCurrBtn: UIButton = {
+    private let dateCurrBtn: UIButton = {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.backgroundColor = Colors.background
@@ -67,6 +57,8 @@ class PrivatView: UIView {
         btn.isHighlighted = false
         return btn
     }()
+
+    // MARK: - Init and Deinit
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -82,10 +74,17 @@ class PrivatView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
+    // MARK: - Public Methods
+
     public func setupUI() {
         self.createTable()
         self.setConstraints()
         self.setupDatePicker()
+    }
+    // MARK: - Privat Methods
+
+    private func createTable() {
+        myTableView.register(UINib(nibName: "PrivatTableViewCell", bundle: nil), forCellReuseIdentifier: "MyCell")
     }
 
     private func setupDatePicker() {
@@ -107,23 +106,17 @@ class PrivatView: UIView {
         pickerBackground.isHidden = true
     }
 
-    @objc func dateChanged(paramDatePicker: UIDatePicker) {
+    @objc private func dateChanged(paramDatePicker: UIDatePicker) {
         guard paramDatePicker.isEqual(self.picker) else { return }
         print("dateChanged := ", paramDatePicker.date)
         dateCurrLbl.text = """
                         Currency Exchange on  \(paramDatePicker.date.getFormattedDate(format: .standart))
                         """
-   
-        //newDateHappens?(picker.date)
     }
 
     @objc private func showDatePicker() {
         picker.isHidden = false
         pickerBackground.isHidden = false
-    }
-
-    private func createTable() {
-        myTableView.register(UINib(nibName: "PrivatTableViewCell", bundle: nil), forCellReuseIdentifier: "MyCell")
     }
 
     @objc private func doneAction() {
@@ -148,7 +141,7 @@ class PrivatView: UIView {
         myTableView.trailingAnchor.constraint(equalTo: dateCurrLbl.trailingAnchor).isActive = true
         myTableView.leadingAnchor.constraint(equalTo: dateCurrLbl.leadingAnchor).isActive = true
         myTableView.topAnchor.constraint(equalTo: dateCurrBtn.bottomAnchor, constant: 20).isActive = true
-        myTableView.heightAnchor.constraint(equalToConstant: 400).isActive = true
+        myTableView.heightAnchor.constraint(equalToConstant: 600).isActive = true
 
         picker.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20).isActive = true
         picker.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20).isActive = true

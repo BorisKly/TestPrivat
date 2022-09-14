@@ -27,30 +27,7 @@ final class ScreensCoordinator: Coordinator {
     }
     // MARK: -
     // MARK: Methods
-//    private func exchangeRates() {
-//        let controller =
-//            ExchageRatesViewController.startVC()
-//        self.navigationController.pushViewController(controller, animated: true)
-//    }
-//    private func currency() {
-//        let controller =
-//            CurrencyViewController.startVC()
-//        self.navigationController.pushViewController(controller, animated: true)
-//    }
-//    private func datePicker() {
-//        let controller =
-//            DatePickerSampleViewController.startVC()
-//        controller.eventHandler = { [weak self] event in
-//            print(event)
-//            switch event {
-//            case .currency :
-//                self?.jumpToScreen(.currency)
-//            case .exchangeRates :
-//                self?.jumpToScreen(.exchangeRates)
-//            }
-//        }
-//        self.navigationController.pushViewController(controller, animated: true)
-//    }
+
     private func privat() {
         let controller =
             PrivatViewController.startVC()

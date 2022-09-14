@@ -16,9 +16,7 @@ struct TestPrivatResponseData: Codable {
     var exchangeRate: [ExchangeRate]
 }
 
-//enum BaseCurrency: String, Codable {
-//    case uah = "UAH"
-//}
+
 // MARK: - ExchangeResponseRate
 struct ExchangeRate: Codable {
     let baseCurrency: String

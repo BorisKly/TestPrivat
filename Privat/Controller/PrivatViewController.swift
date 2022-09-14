@@ -16,17 +16,25 @@ protocol  PrivatViewControllerDelegate: AnyObject {
 
 class PrivatViewController: UIViewController {
 
+    // MARK: - Public Properties
+
     public var eventHandler: ((PrivatEvent)->())?
 
     public var model: TableCurrencyArray = TableCurrencyArray()
+
+    // MARK: - Privat Properties
 
     private var mainView: PrivatView? {
         return self.view as? PrivatView
     }
 
+    // MARK: - Init Methods
+
     public static func startVC() -> Self {
         return Self.init()
     }
+
+    // MARK: - Override Methods
 
     override func loadView() {
         let codeView = PrivatView(frame: CGRect.zero)
@@ -41,18 +49,15 @@ class PrivatViewController: UIViewController {
         mainView?.myTableView.dataSource = self
         mainView?.delegate = self
         mainView?.addGestureRecognizer(tapGesture)
-//        mainView?.newDateHappens = {
-//            self.model.setModel(date: $0) {
-//                self.mainView?.myTableView.reloadData()
-//            }
-//        }
         mainView?.setupUI()
         model.setModel{
             self.mainView?.myTableView.reloadData()
         }
     }
 
-    @objc func tapGestureDone() {
+    // MARK:  - Methods
+
+    @objc private func tapGestureDone() {
         mainView?.picker.endEditing(true)
         mainView?.picker.isHidden = true
         mainView?.pickerBackground.isHidden = true
@@ -60,11 +65,12 @@ class PrivatViewController: UIViewController {
     }
 }
 
+// MARK: - Extensions
+
 extension PrivatViewController: PrivatViewControllerDelegate {
     func dateChanged(newDate: Date?) {
         model.setModel(date: newDate ?? Date()) {
             self.mainView?.myTableView.reloadData()
         }
-        print(newDate?.getFormattedDate(format: .standart))
     }
 }

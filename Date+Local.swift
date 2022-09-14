@@ -7,6 +7,8 @@
 
 import Foundation
 
+// MARK: - Extensions
+
 extension Date {
 
     func getFormattedDate(format: LocalDateFormats) -> String {
