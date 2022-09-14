@@ -16,8 +16,8 @@ class TableCurrencyArray {
     // MARK: - Methods
 
     public func setModel(date: Date = Date(), onSuccess: @escaping () -> Void) {
-        NetworkManager.shared.simplePrivatArray(date: date, onSuccess: { jsonPB in
-        self.jsonPB = jsonPB
+        NetworkManager.shared.simplePrivatArray(date: date, onSuccess: { [weak self] jsonPB in
+            self?.jsonPB = jsonPB
         DispatchQueue.main.async {
             onSuccess()
         }

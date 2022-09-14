@@ -50,8 +50,8 @@ class PrivatViewController: UIViewController {
         mainView?.delegate = self
         mainView?.addGestureRecognizer(tapGesture)
         mainView?.setupUI()
-        model.setModel{
-            self.mainView?.myTableView.reloadData()
+        model.setModel{ [weak self] in
+            self?.mainView?.myTableView.reloadData()
         }
     }
 
@@ -69,8 +69,8 @@ class PrivatViewController: UIViewController {
 
 extension PrivatViewController: PrivatViewControllerDelegate {
     func dateChanged(newDate: Date?) {
-        model.setModel(date: newDate ?? Date()) {
-            self.mainView?.myTableView.reloadData()
+        model.setModel(date: newDate ?? Date()) { [weak self] in
+            self?.mainView?.myTableView.reloadData()
         }
     }
 }
