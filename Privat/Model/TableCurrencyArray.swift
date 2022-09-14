@@ -19,7 +19,6 @@ class TableCurrencyArray {
         NetworkManager.shared.simplePrivatArray(date: date, onSuccess: { jsonPB in
         self.jsonPB = jsonPB
         DispatchQueue.main.async {
-            print("OK!!!OK")
             onSuccess()
         }
     }, onError: { print( $0 )})

@@ -34,9 +34,7 @@ extension PrivatViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
-        print("Accesory path = " , indexPath)
         let ownerCell = tableView.cellForRow(at: indexPath)
-        print("Cell title = ", ownerCell?.textLabel?.text ?? "nil")
     }
 
 }

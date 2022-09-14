@@ -67,7 +67,6 @@ class PrivatView: UIView {
         self.addSubview(dateCurrBtn)
         self.addSubview(pickerBackground)
         self.addSubview(picker)
-      //  self.addGestureRecognizer(tapGesture)
         self.isUserInteractionEnabled = true
     }
     required init?(coder: NSCoder) {
@@ -108,7 +107,6 @@ class PrivatView: UIView {
 
     @objc private func dateChanged(paramDatePicker: UIDatePicker) {
         guard paramDatePicker.isEqual(self.picker) else { return }
-        print("dateChanged := ", paramDatePicker.date)
         dateCurrLbl.text = """
                         Currency Exchange on  \(paramDatePicker.date.getFormattedDate(format: .standart))
                         """
