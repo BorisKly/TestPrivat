@@ -10,10 +10,9 @@ import UIKit
 extension PrivatViewController: UITableViewDataSource, UITableViewDelegate {
 
     // MARK: - Private Properties
-    
     private var  indentifire: String { "MyCell" }
 
-    //MARK: - UITableViewDataSourse
+    // MARK: - UITableViewDataSourse
 
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return model.jsonPB.count
@@ -27,7 +26,7 @@ extension PrivatViewController: UITableViewDataSource, UITableViewDelegate {
             cell?.backgroundColor = Colors.background3
             return cell ?? UITableViewCell()
         }
-    //MARK: - UITableViewDelegate
+    // MARK: - UITableViewDelegate
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50

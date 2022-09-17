@@ -54,8 +54,7 @@ class PrivatViewController: UIViewController {
             self?.mainView?.myTableView.reloadData()
         }
     }
-
-    // MARK:  - Methods
+    // MARK: - Methods
 
     @objc private func tapGestureDone() {
         mainView?.picker.endEditing(true)

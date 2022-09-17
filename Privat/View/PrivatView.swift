@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import PinLayout
 
 class PrivatView: UIView {
 
@@ -122,7 +123,7 @@ class PrivatView: UIView {
         pickerBackground.isHidden = true
     }
 
-    //MARK: - Constraints
+    // MARK: - Constraints
 
     private func setConstraints() {
 
@@ -151,6 +152,4 @@ class PrivatView: UIView {
         pickerBackground.topAnchor.constraint(equalTo: self.dateCurrBtn.bottomAnchor, constant: 20).isActive = true
         pickerBackground.heightAnchor.constraint(equalToConstant: 400).isActive = true
     }
-
-
 }

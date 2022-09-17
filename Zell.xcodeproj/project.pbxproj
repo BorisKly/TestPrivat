@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23AA41ECEC7626831E6D2817 /* Pods_Zell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6512A6BA9D7B68C8A05A1F5A /* Pods_Zell.framework */; };
 		EC4B4BD628BCEB0400285221 /* AppConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B4BD528BCEB0400285221 /* AppConfigurator.swift */; };
 		EC4B4BD828BCEB3500285221 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B4BD728BCEB3500285221 /* Coordinator.swift */; };
 		EC4B4BDA28BCEB6700285221 /* StoryboardLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B4BD928BCEB6700285221 /* StoryboardLoadable.swift */; };
@@ -33,6 +34,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43ED45EA75E01CD4F52D5F77 /* Pods-Zell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zell.debug.xcconfig"; path = "Target Support Files/Pods-Zell/Pods-Zell.debug.xcconfig"; sourceTree = "<group>"; };
+		6512A6BA9D7B68C8A05A1F5A /* Pods_Zell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9B317C7272FB6542B2B0910 /* Pods-Zell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zell.release.xcconfig"; path = "Target Support Files/Pods-Zell/Pods-Zell.release.xcconfig"; sourceTree = "<group>"; };
 		EC4B4BD528BCEB0400285221 /* AppConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurator.swift; sourceTree = "<group>"; };
 		EC4B4BD728BCEB3500285221 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		EC4B4BD928BCEB6700285221 /* StoryboardLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardLoadable.swift; sourceTree = "<group>"; };
@@ -65,12 +69,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23AA41ECEC7626831E6D2817 /* Pods_Zell.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FB78E91D528C78BAFAE1A63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43ED45EA75E01CD4F52D5F77 /* Pods-Zell.debug.xcconfig */,
+				C9B317C7272FB6542B2B0910 /* Pods-Zell.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5D4D133973EA48B6FBF009C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6512A6BA9D7B68C8A05A1F5A /* Pods_Zell.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EC4B4BD428BCEAE900285221 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +163,8 @@
 				EC4B4BD428BCEAE900285221 /* Coordinator */,
 				EC4C661A28A2C3A60012E68C /* Zell */,
 				EC4C661928A2C3A60012E68C /* Products */,
+				1FB78E91D528C78BAFAE1A63 /* Pods */,
+				5D4D133973EA48B6FBF009C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,9 +197,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC4C662C28A2C3AA0012E68C /* Build configuration list for PBXNativeTarget "Zell" */;
 			buildPhases = (
+				4FF09575DCDD55870066C42B /* [CP] Check Pods Manifest.lock */,
 				EC4C661428A2C3A60012E68C /* Sources */,
 				EC4C661528A2C3A60012E68C /* Frameworks */,
 				EC4C661628A2C3A60012E68C /* Resources */,
+				3407CDDD7216567B3953415C /* [CP] Embed Pods Frameworks */,
+				EC4B4C3F28D4DD6A00285221 /* ShellScript */,
+				EC4B4C4028D4DD9D00285221 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -231,6 +259,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3407CDDD7216567B3953415C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zell/Pods-Zell-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zell/Pods-Zell-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		4FF09575DCDD55870066C42B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zell-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC4B4C3F28D4DD6A00285221 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+		EC4B4C4028D4DD9D00285221 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EC4C661428A2C3A60012E68C /* Sources */ = {
@@ -399,6 +502,7 @@
 		};
 		EC4C662D28A2C3AA0012E68C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43ED45EA75E01CD4F52D5F77 /* Pods-Zell.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -417,6 +521,7 @@
 		};
 		EC4C662E28A2C3AA0012E68C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9B317C7272FB6542B2B0910 /* Pods-Zell.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
